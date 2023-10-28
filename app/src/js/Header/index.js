@@ -30,8 +30,3 @@ menuLink04.addEventListener('click', ()=>{
   toggler.classList.toggle('active');
   header__list.classList.toggle('active');
 })
-
-menuLink05.addEventListener('click', ()=>{
-  toggler.classList.toggle('active');
-  header__list.classList.toggle('active');
-})
