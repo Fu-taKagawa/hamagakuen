@@ -1,24 +1,24 @@
 .footer {
     width: 100%;
-    background: #231808;
+    background: #e5e5e5;
     padding: 40px 0;
 
     &__content{
-        &__list {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
+        width: 70%;
+        margin: auto;
 
-            @include sp {
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-            }
+        @include sp {
+            width: 95%;
+        }
 
-            &__item {
-                color: #{$white};
-                font-weight: bold;
-            }
+        &__img {
+            width: 150px;
+            margin-bottom: 40px;
+        }
+
+        &__item {
+            color: #{$black};
+            font-weight: bold;
         }
     }
 }

@@ -9,6 +9,10 @@
 }
 // 共通
 
+html {
+	scroll-behavior: smooth;
+}
+
 ::-moz-selection {
 	background: #{$black};
 	color: #{$white};
