@@ -1,7 +1,7 @@
 .FV {
     display: block;
     position: relative;
-
+    padding: 70px 0 50px;
     @include sp {
         padding: 60px 0 100px;
     }
@@ -70,7 +70,6 @@
             }
         }
     }
-
 }
 
 .section {
@@ -406,7 +405,13 @@
 
             &-img {
                 width: 50px;
+                height: 50px;
                 margin: auto;
+
+                & > img {
+                width: 100%;
+                height: 100%;
+                }
             }
 
             &-ttl {
@@ -456,17 +461,20 @@
             }
 
             &-ttl {
+                display: inline;
                 width: fit-content;
                 font-size: 1.6rem;
                 font-weight: 900;
                 font-family: futura-pt, sans-serif;
                 background: #033b8a;
                 color: $white;
-                padding: 10px;
+                padding: 12px 10px;
+                line-height: 70px;
                 margin-top: 10px;
 
                 @include sp {
                     font-size: 1.2rem;
+                    line-height: 60px;
                 }
             }
 
@@ -501,7 +509,7 @@
 
 .faq {
     position: relative;
-    padding: 100px 0 130px;
+    padding: 100px 0 170px;
     background: #c2d3e7;
 
     @include sp {
@@ -533,6 +541,19 @@
         &-question {
             font-size: 1.2rem;
             font-weight: 900;
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                position: absolute;
+                content: "Q";
+                font-size: 2rem;
+                font-weight: 900;
+                top: -15px;
+                left: -10px;
+                font-family: futura-pt, sans-serif;
+                color: #033b8a;
+            }
 
             @include sp {
                 font-size: 1rem;
@@ -540,22 +561,32 @@
         }
 
         &-answer {
+            position: relative;
             font-size: 1rem;
+            padding-left: 20px;
+            margin-top: 20px;
+
+            &::before {
+                position: absolute;
+                content: "A";
+                font-size: 2rem;
+                font-weight: 900;
+                top: -15px;
+                left: -8px;
+                font-family: futura-pt, sans-serif;
+                color: #d10606;
+            }
+
+            & > a {
+                color: #033b8a;
+                border-bottom: solid 2px #033b8a;
+            }
 
             @include sp {
                 font-size: .8rem;
             }
         }
 
-        &-icon {
-            font-weight: 900;
-            font-family: futura-pt,sans-serif;
-            font-size: 2.2rem;
-
-            @include sp {
-                font-size: 1.8rem;
-            }
-        }
         & dl {
             position: relative;
             overflow: hidden;
@@ -651,32 +682,30 @@
                             width: 20px;
                             height: 3px;
                             top: 50%;
-                            right: 25px;
+                            right: 0px;
                             background: $black;
                             transform: translateY(-50%);
+
+                            @include sp {
+                                right: -10px;
+                            }
                         }
 
                         &::after {
                             content: "";
                             position: absolute;
                             top: 50%;
-                            right: 25px;
+                            right: 0px;
                             width: 20px;
                             height: 3px;
                             background: $black;
                             transition: .4s;
                             transform: translateY(-50%) rotate(90deg);
+
+                            @include sp {
+                                right: -10px;
+                            }
                         }
-                    }
-
-                    & .question {
-                        color: #033b8a;
-                        margin-right: 20px;
-                    }
-
-                    & .answer {
-                        color: #d10606;
-                        margin-right: 25px;
                     }
                 }
             }
@@ -685,7 +714,9 @@
     }
 }
 
-
+.txt-blue {
+    color: #033b8a;
+}
 
 .mt {
     &-16 {
