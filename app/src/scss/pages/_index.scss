@@ -14,7 +14,7 @@
 
     &-sp {
         position: absolute;
-        width: 60%;
+        width: 65%;
         right: 0;
         top: 30%;
         z-index: 0;
@@ -529,8 +529,7 @@
         border-radius: 5px;
         margin-top: 30px;
         &-txt {
-            margin-top: 10px;
-
+            margin-top: 0px;
             font-size: 1.4rem;
 
             @include sp {
@@ -667,6 +666,7 @@
                         position: relative;
                         font-size: 1.2rem;
                         list-style: none;
+                        list-style-image: none;
                         display: flex;
                         align-items: center;
 
