@@ -21,4 +21,15 @@
             font-weight: bold;
         }
     }
+
+    &__link {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+
+        @include sp {
+            gap: 5px;
+            flex-direction: column;
+        }
+    }
 }
