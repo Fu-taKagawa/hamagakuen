@@ -68,6 +68,10 @@
             @include sp {
                 width: 95%;
             }
+
+            & img {
+                margin: auto;
+            }
         }
     }
 }
@@ -99,7 +103,7 @@
             color: #033b8a;
             padding: 10px 30px 20px;
             @include sp {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
         }
     }
@@ -132,14 +136,14 @@
         }
 
         &-lead {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 900;
             margin-bottom: 50px;
             font-family: futura-pt, sans-serif;
             color: #3c3c3c;
 
             @include sp {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 margin-bottom: 20px;
             }
 
@@ -169,7 +173,9 @@
             color: #3c3c3c;
 
             @include sp {
-                font-size: .6rem;
+                width: 75%;
+                margin: auto;
+                font-size: .8rem;
             }
         }
     }

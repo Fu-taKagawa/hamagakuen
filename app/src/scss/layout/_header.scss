@@ -44,7 +44,7 @@
 			}
 		}
 		&-line {
-			width: 15%;
+			width: 17%;
 			background: #08fb00;
 			height: 100%;
 			color: $black;
@@ -149,5 +149,11 @@
 		&.active > span::after {
 			transform: rotate(225deg);
 		}
+	}
+}
+
+@media(min-width:800px) and (max-width:1150px) {
+	.header__img-line__txt {
+		font-size: .6rem;
 	}
 }
